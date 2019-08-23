@@ -14,8 +14,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "eslintConfig": {
-    "extends": "react-app"
+  "standard":{
+  "parser":"babel-eslint"
   },
   "browserslist": {
     "production": [

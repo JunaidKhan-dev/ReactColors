@@ -1,4 +1,4 @@
-let seedColors = [
+const seedColors = [
   {
     paletteName: 'Material UI Colors',
     id: 'material-ui-colors',
