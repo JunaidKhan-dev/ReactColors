@@ -30,6 +30,7 @@
 
 .ColorBox:hover .copy-button{
   opacity: 1;
+  cursor: pointer;
 }
 .box-content{
   position: absolute;
