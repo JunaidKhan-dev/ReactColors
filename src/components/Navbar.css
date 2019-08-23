@@ -1,0 +1,53 @@
+.Navbar{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 6vh;
+}
+.logo{
+  margin-right:15px;
+  padding: 0 13px;
+  font-size: 22px;
+  background: rgb(63, 65, 61);
+  border-radius: 50%;
+  color: white !important;
+  font-family: Roboto;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.logo a{
+  color: white !important;
+  text-decoration: none;
+  font-kerning: normal;
+  letter-spacing: .2rem;
+}
+
+.slider{
+  display: flex !important;
+}
+.slider-level{
+   margin-left:2px;
+   padding-right: 5px;
+}
+.rc-slider-track{
+  background: transparent;
+}
+.rc-slider-rail{
+  height: 8px;
+}
+.rc-slider-handle,
+.rc-slider-handle:active,
+.rc-slider-handle:focus,
+.rc-slider-handle:hover{
+  background: greenyellow;
+  outline: none;
+  border: 2px solid yellowgreen;
+  box-shadow: none;
+  width: 13px;
+  height: 13px;
+  margin-left: -7px;
+  margin-top: -3px;
+}
+

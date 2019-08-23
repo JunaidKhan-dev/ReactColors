@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import Palette from './components/Palette'
 import seedColors from './seedColors'
 import { generatePalette } from "./colorsHelpers" 
+import './App.css'
 class App extends Component {
   state = { }
   render () {
