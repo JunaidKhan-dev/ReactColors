@@ -5,6 +5,7 @@ const levels = [50, 100, 200, 300, 400, 500, 600, 700, 800, 900];
 
 // function to generate  palette buy given colors
 function generatePalette(starterPalette) {
+  console.log(starterPalette)
   // create new palette with empty object of colors
   let newPalette = {
     paletteName: starterPalette.paletteName,
