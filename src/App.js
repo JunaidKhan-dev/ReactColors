@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component, Fragment } from 'react'
 import Palette from './components/Palette'
 import seedColors from './seedColors'
 import { generatePalette } from "./colorsHelpers" 
@@ -7,9 +7,9 @@ class App extends Component {
   state = { }
   render () {
     return (
-      <div>
+      <Fragment>
         <Palette palette={generatePalette(seedColors[4])} />
-      </div>
+      </Fragment>
     )
   }
 }
