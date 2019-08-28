@@ -6,11 +6,10 @@ import { Grid } from '@material-ui/core'
 
 const styles = {
   root:{
-    backgroundColor: 'blue',
-    height: '100vh',
+    height: '100%',
     display: 'flex',
     alignItems: 'flex-start',
-    justifyContent: 'center'
+    justifyContent: 'center',
   },
   container:{
     width: '50%',
@@ -45,7 +44,9 @@ class PaletteList extends Component {
             {
               this.props.palettes.map((p, i)=>{
                 return (
-                <Minipalette {...p} />
+                <Link to={`/palette/${i}`} >
+                  <Minipalette {...p} />
+                </Link>
                 ) 
               })
             }

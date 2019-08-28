@@ -1,6 +1,7 @@
 .ColorBox{
-  width: 20%;
-  height: 25%;
+  width: 12rem;
+  /* height: 35%; */
+  height: 33%;
   margin: 0 auto;
   display: inline-block;
   position: relative;

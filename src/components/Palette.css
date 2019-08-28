@@ -1,18 +1,17 @@
-body{
-  margin: 0;
-  padding-top: 1rem;
-  overflow: hidden;
-  box-sizing: border-box;
 
-}
 .Palette{
+  margin-top: 5px;
   height: 100vh;
   display: flex;
   flex-direction: column;
+
+ 
 }
 
 .Palette-colors{
-  height: 90%;
+  height: 98vh;
+  background: rgb(224, 224, 224) !important;
+  margin: 0 auto;
 }
 .slider{
   width: 350px;
