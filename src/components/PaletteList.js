@@ -1,24 +1,59 @@
 import React, { Component, Fragment } from 'react'
 import Minipalette from './Minipalette'
 import {Link}  from 'react-router-dom'
+import { withStyles } from '@material-ui/styles'
+import { Grid } from '@material-ui/core'
+
+const styles = {
+  root:{
+    backgroundColor: 'blue',
+    height: '100vh',
+    display: 'flex',
+    alignItems: 'flex-start',
+    justifyContent: 'center'
+  },
+  container:{
+    width: '50%',
+    display: 'flex',
+    alignItems: 'flex-start',
+    flexDirection: 'column',
+    flexWrap: 'wrap'
+  },
+  nav:{
+    display: 'flex',
+    width: '100%',
+    justifyContent: 'space-between',
+    color: 'white'
+  }
+}
 class PaletteList extends Component {
   state = {  }
   render() { 
+  // console.log(this.props.classes)
     return ( 
-      <Fragment>
-        <Minipalette />
-        {
-          this.props.palettes.map((p, i)=>{
-            return (
-            <p>
-            <Link key={(Math.random()*i) + p } to={`/palette/${i}`} >{p.paletteName}</Link>
-            </p>
-            ) 
-          })
-        }
-      </Fragment>
+      <div className={this.props.classes.root}>
+        <div className={this.props.classes.container}>
+          <nav className={this.props.classes.nav}>
+            <h1> React Colors </h1>
+          </nav>
+            <Grid
+              container
+              direction="row"
+              justify="center"
+              alignItems="center"
+            >
+            {
+              this.props.palettes.map((p, i)=>{
+                return (
+                <Minipalette {...p} />
+                ) 
+              })
+            }
+            </Grid>
+          </div>
+        </div>
      )
   }
 }
  
-export default PaletteList
+export default withStyles(styles)(PaletteList)
