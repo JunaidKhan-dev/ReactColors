@@ -42,7 +42,7 @@ this.setState({
     return ( 
       <nav className='Navbar'>
         <div className='logo'>
-          <a href="/">React Colors</a>
+          <a href="https://junaidkhaneu.github.io/ReactColors/">React Colors</a>
         </div>
         <div className='slider'>
         Level: <span className='slider-level'> {this.state.localLevel}</span>
