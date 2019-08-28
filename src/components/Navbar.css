@@ -2,7 +2,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 6vh;
+  height: 60px;
+  color: white !important;
 }
 .logo{
   margin-right:15px;

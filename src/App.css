@@ -6,3 +6,29 @@ body{
  background: blue;   
 
 }
+
+a{
+  text-decoration: none;
+}
+
+.MuiSelect-selectMenu{
+  color:white!important;
+}
+
+@media only screen and (max-width: 700px) {
+  .Palette-colors{
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .ColorBox{
+    width:400px;
+  }
+  .Navbar{
+    display: flex;
+    flex-direction: column;
+    height:10vh;
+    color:white;
+  }
+  
+}
