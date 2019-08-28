@@ -37,7 +37,7 @@ this.setState({
 })
   }
   render() { 
-
+    console.log(this.state)
 
     return ( 
       <nav className='Navbar'>
@@ -48,13 +48,6 @@ this.setState({
         Level: <span className='slider-level'> {this.state.localLevel}</span>
         <Slider defaultValue={this.state.localLevel} min={100} max={900}
         onAfterChange={this.change} step={100} />
-        </div>
-        <div className='select-container'>
-          <Select value={this.state.format} onChange={this.changeFormat}>
-            <MenuItem value='hex'>HEX - #ffffff </MenuItem>
-            <MenuItem value='rgb'>RGB - rgb(255,255,255) </MenuItem>
-            <MenuItem value='rgba'>RGBA - rgba(255,255,255,1.0)</MenuItem>
-          </Select>
         </div>
         <Snackbar anchorOrigin={ {vertical: 'bottom', horizontal : 'left'} } 
         open={this.state.open} autoHideDuration={3000} message={<span id='message-id'>Format Changed to {this.state.format} !</span>} action={[
